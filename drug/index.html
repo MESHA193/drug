@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наркологическая клиника "Новая Жизнь" - Лечение алкоголизма и наркомании в Москве</title>
+    <meta name="description" content="Наркологическая клиника Новая Жизнь в Москве - анонимное лечение алкоголизма и наркомании, кодирование, реабилитация. Круглосуточная помощь нарколога на дому.">
+    <meta name="keywords" content="наркологическая клиника, лечение алкоголизма, наркомания, кодирование, вывод из запоя, нарколог на дом">
+    <meta property="og:title" content="Наркологическая клиника Новая Жизнь - Лечение алкоголизма и наркомании">
+    <meta property="og:description" content="Профессиональное лечение зависимостей. Анонимно, эффективно, с гарантией результата.">
+    <meta name="twitter:title" content="Наркологическая клиника Новая Жизнь">
+    <meta name="twitter:description" content="Профессиональное лечение зависимостей. Анонимно, эффективно, с гарантией результата.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f8fafc;
+            --accent-color: #10b981;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply bg-white text-[var(--primary-color)] border border-[var(--primary-color)] px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors duration-200;
+        }
+        
+        .card {
+            @apply bg-white rounded-xl shadow-lg p-6 border border-[var(--border-color)];
+        }
+        
+        .section-padding {
+            @apply py-16 px-4;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Services.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Doctors.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
