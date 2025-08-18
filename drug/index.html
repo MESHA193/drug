@@ -3,72 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наркологическая клиника "Новая Жизнь" - Лечение алкоголизма и наркомании в Москве</title>
-    <meta name="description" content="Наркологическая клиника Новая Жизнь в Москве - анонимное лечение алкоголизма и наркомании, кодирование, реабилитация. Круглосуточная помощь нарколога на дому.">
-    <meta name="keywords" content="наркологическая клиника, лечение алкоголизма, наркомания, кодирование, вывод из запоя, нарколог на дом">
-    <meta property="og:title" content="Наркологическая клиника Новая Жизнь - Лечение алкоголизма и наркомании">
-    <meta property="og:description" content="Профессиональное лечение зависимостей. Анонимно, эффективно, с гарантией результата.">
-    <meta name="twitter:title" content="Наркологическая клиника Новая Жизнь">
-    <meta name="twitter:description" content="Профессиональное лечение зависимостей. Анонимно, эффективно, с гарантией результата.">
-
-    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
-    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
-
-    <style type="text/tailwindcss">
-    @layer theme {
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #f8fafc;
-            --accent-color: #10b981;
-            --text-primary: #1e293b;
-            --text-secondary: #64748b;
-            --border-color: #e2e8f0;
-        }
-    }
-
-    @layer base {
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--text-primary);
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-    }
-
-    @layer components {
-        .btn-primary {
-            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200;
-        }
-        
-        .btn-secondary {
-            @apply bg-white text-[var(--primary-color)] border border-[var(--primary-color)] px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors duration-200;
-        }
-        
-        .card {
-            @apply bg-white rounded-xl shadow-lg p-6 border border-[var(--border-color)];
-        }
-        
-        .section-padding {
-            @apply py-16 px-4;
-        }
-    }
-    </style>
+    <title>Наркологическая клиника «Новая Жизнь» — Москва</title>
+    <meta name="description" content="Наркологическая клиника «Новая Жизнь»: вывод из запоя, кодирование, реабилитация. Анонимно и круглосуточно.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/babel" src="components/Header.js"></script>
-    <script type="text/babel" src="components/Hero.js"></script>
-    <script type="text/babel" src="components/Services.js"></script>
-    <script type="text/babel" src="components/About.js"></script>
-    <script type="text/babel" src="components/Doctors.js"></script>
-    <script type="text/babel" src="components/Contact.js"></script>
-    <script type="text/babel" src="components/Footer.js"></script>
-    <script type="text/babel" src="app.js"></script>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Новая Жизнь</div>
+            <nav class="nav">
+                <a href="#services">Услуги</a>
+                <a href="#about">О клинике</a>
+                <a href="#doctors">Врачи</a>
+                <a href="#contact">Контакты</a>
+                <a class="btn btn-primary" href="tel:+79990000000">Позвонить</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1>Профессиональная помощь при зависимостях</h1>
+                <p>Анонимно. Эффективно. Круглосуточно. Помогаем вернуться к здоровой жизни.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="tel:+79990000000">Вызвать нарколога</a>
+                    <a class="btn btn-secondary" href="#contact">Бесплатная консультация</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Вывод из запоя</h3>
+                        <p>Быстрая и безопасная детоксикация с последующей поддержкой и рекомендациями.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Кодирование</h3>
+                        <p>Медикаментозные и психотерапевтические методики, подобранные индивидуально.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Реабилитация</h3>
+                        <p>Комплексные программы восстановления и работы с семьёй.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Нарколог на дом</h3>
+                        <p>Конфиденциальный выезд специалиста и оказание помощи на месте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-muted">
+            <div class="container">
+                <h2 class="section-title">О клинике</h2>
+                <p class="lead">Мы объединяем опыт врачей-наркологов, психиатров и психотерапевтов, чтобы помочь пациентам преодолеть зависимость и обрести новую жизнь. Работаем строго конфиденциально, в соответствии с медицинскими стандартами.</p>
+            </div>
+        </section>
+
+        <section id="doctors" class="section">
+            <div class="container">
+                <h2 class="section-title">Наши врачи</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Иванов Иван Иванович</h3>
+                        <p class="muted">Врач-нарколог</p>
+                        <p>15+ лет практики, специализация — лечение алкогольной зависимости.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Петров Пётр Петрович</h3>
+                        <p class="muted">Психиатр-нарколог</p>
+                        <p>Эксперт в комплексной терапии и работе с коморбидными расстройствами.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Сидорова Анна Андреевна</h3>
+                        <p class="muted">Психотерапевт</p>
+                        <p>Индивидуальная и семейная психотерапия, поддержка в ремиссии.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-muted">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contact-grid">
+                    <div>
+                        <p><strong>Телефон:</strong> <a href="tel:+79990000000">+7 (999) 000-00-00</a></p>
+                        <p><strong>Адрес:</strong> Москва, ул. Примерная, д. 1</p>
+                        <p class="muted">Круглосуточно. Анонимно.</p>
+                    </div>
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <label>
+                            Имя
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                        </label>
+                        <label>
+                            Сообщение
+                            <textarea name="message" rows="4" placeholder="Кратко опишите ситуацию"></textarea>
+                        </label>
+                        <button class="btn btn-primary" type="submit" aria-label="Отправить форму">Отправить</button>
+                        <p class="form-note muted">Форма демонстрационная.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 «Новая Жизнь». Все права защищены.</p>
+            <a href="#top" class="to-top">Наверх ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наркологическая клиника «Новая Жизнь» — Москва</title>
+    <meta name="description" content="Наркологическая клиника «Новая Жизнь»: вывод из запоя, кодирование, реабилитация. Анонимно и круглосуточно.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Новая Жизнь</div>
+            <nav class="nav">
+                <a href="#services">Услуги</a>
+                <a href="#about">О клинике</a>
+                <a href="#doctors">Врачи</a>
+                <a href="#contact">Контакты</a>
+                <a class="btn btn-primary" href="tel:+79990000000">Позвонить</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1>Профессиональная помощь при зависимостях</h1>
+                <p>Анонимно. Эффективно. Круглосуточно. Помогаем вернуться к здоровой жизни.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="tel:+79990000000">Вызвать нарколога</a>
+                    <a class="btn btn-secondary" href="#contact">Бесплатная консультация</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Вывод из запоя</h3>
+                        <p>Быстрая и безопасная детоксикация с последующей поддержкой и рекомендациями.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Кодирование</h3>
+                        <p>Медикаментозные и психотерапевтические методики, подобранные индивидуально.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Реабилитация</h3>
+                        <p>Комплексные программы восстановления и работы с семьёй.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Нарколог на дом</h3>
+                        <p>Конфиденциальный выезд специалиста и оказание помощи на месте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-muted">
+            <div class="container">
+                <h2 class="section-title">О клинике</h2>
+                <p class="lead">Мы объединяем опыт врачей-наркологов, психиатров и психотерапевтов, чтобы помочь пациентам преодолеть зависимость и обрести новую жизнь. Работаем строго конфиденциально, в соответствии с медицинскими стандартами.</p>
+            </div>
+        </section>
+
+        <section id="doctors" class="section">
+            <div class="container">
+                <h2 class="section-title">Наши врачи</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Иванов Иван Иванович</h3>
+                        <p class="muted">Врач-нарколог</p>
+                        <p>15+ лет практики, специализация — лечение алкогольной зависимости.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Петров Пётр Петрович</h3>
+                        <p class="muted">Психиатр-нарколог</p>
+                        <p>Эксперт в комплексной терапии и работе с коморбидными расстройствами.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Сидорова Анна Андреевна</h3>
+                        <p class="muted">Психотерапевт</p>
+                        <p>Индивидуальная и семейная психотерапия, поддержка в ремиссии.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-muted">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contact-grid">
+                    <div>
+                        <p><strong>Телефон:</strong> <a href="tel:+79990000000">+7 (999) 000-00-00</a></p>
+                        <p><strong>Адрес:</strong> Москва, ул. Примерная, д. 1</p>
+                        <p class="muted">Круглосуточно. Анонимно.</p>
+                    </div>
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <label>
+                            Имя
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                        </label>
+                        <label>
+                            Сообщение
+                            <textarea name="message" rows="4" placeholder="Кратко опишите ситуацию"></textarea>
+                        </label>
+                        <button class="btn btn-primary" type="submit" aria-label="Отправить форму">Отправить</button>
+                        <p class="form-note muted">Форма демонстрационная.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 «Новая Жизнь». Все права защищены.</p>
+            <a href="#top" class="to-top">Наверх ↑</a>
+        </div>
+    </footer>
 </body>
 </html>
