@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наркологическая клиника "Новая Жизнь" - Лечение алкоголизма и наркомании в Краснодаре</title>
-    <meta name="description" content="Наркологическая клиника Новая Жизнь в Краснодаре - анонимное лечение алкоголизма и наркомании, кодирование, реабилитация. Круглосуточная помощь нарколога на дому.">
-    <meta name="keywords" content="наркологическая клиника, лечение алкоголизма, наркомания, кодирование, вывод из запоя, нарколог на дом">
-    <meta property="og:title" content="Наркологическая клиника Новая Жизнь - Лечение алкоголизма и наркомании">
-    <meta property="og:description" content="Профессиональное лечение зависимостей. Анонимно, эффективно, с гарантией результата.">
-    <meta name="twitter:title" content="Наркологическая клиника Новая Жизнь">
-    <meta name="twitter:description" content="Профессиональное лечение зависимостей. Анонимно, эффективно, с гарантией результата.">
+    <title>Наркологическая клиника "Новая Жизнь" - Лечение алкоголизма и наркомании</title>
+    <meta name="description" content="Анонимная помощь при алкоголизме и наркомании. Кодирование, детоксикация, выезд врача, бесплатная консультация.">
+    <meta name="keywords" content="наркологическая клиника, лечение алкоголизма, наркомания, кодирование, детоксикация, нарколог на дом">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
@@ -40,13 +36,13 @@
 
                 <div class="hidden md:flex items-center space-x-4">
                     <div class="text-right">
-                        <p class="font-semibold text-blue-600">+7 (495) 123-45-67</p>
+                        <a href="tel:+74951234567" class="font-semibold text-blue-600 hover:text-blue-700">+7 (495) 123-45-67</a>
                         <p class="text-sm text-gray-600">Круглосуточно</p>
                     </div>
-                    <button class="btn-primary">Вызвать врача</button>
+                    <button class="btn-primary" data-action="call-doctor">Вызвать врача</button>
                 </div>
 
-                <button class="md:hidden p-2" onclick="toggleMenu()">
+                <button class="md:hidden p-2" onclick="toggleMenu()" aria-label="Открыть меню">
                     <div class="icon-menu text-xl text-gray-800"></div>
                 </button>
             </div>
@@ -59,8 +55,8 @@
                     <a href="#doctors" class="text-left text-gray-600 hover:text-blue-600">Врачи</a>
                     <a href="#contact" class="text-left text-gray-600 hover:text-blue-600">Контакты</a>
                     <div class="pt-3 border-t border-gray-200">
-                        <p class="font-semibold text-blue-600">+7 (495) 123-45-67</p>
-                        <button class="btn-primary mt-2 w-full">Вызвать врача</button>
+                        <a href="tel:+74951234567" class="font-semibold text-blue-600 hover:text-blue-700">+7 (495) 123-45-67</a>
+                        <button class="btn-primary mt-2 w-full" data-action="call-doctor">Вызвать врача</button>
                     </div>
                 </nav>
             </div>
@@ -72,20 +68,20 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
                         Профессиональное лечение зависимостей
-                    </h1>
+                    </h2>
                     <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        Анонимная помощь при алкоголизме и наркомании. Современные методы лечения, 
-                        опытные врачи, индивидуальный подход к каждому пациенту.
+                        Анонимная помощь при алкоголизме и наркомании. Современные методы лечения, опытные врачи,
+                        индивидуальный подход к каждому пациенту.
                     </p>
-                    
+
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <button class="btn-primary flex items-center justify-center space-x-2">
+                        <button class="btn-primary flex items-center justify-center space-x-2" data-action="call-addiction-doctor">
                             <div class="icon-phone text-lg"></div>
                             <span>Вызвать нарколога</span>
                         </button>
-                        <button class="btn-secondary flex items-center justify-center space-x-2">
+                        <button class="btn-secondary flex items-center justify-center space-x-2" data-action="free-consultation">
                             <div class="icon-message-circle text-lg"></div>
                             <span>Бесплатная консультация</span>
                         </button>
@@ -106,7 +102,7 @@
                 <div class="relative">
                     <div class="bg-white rounded-2xl shadow-2xl p-8">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Экстренная помощь</h3>
-                        
+
                         <div class="space-y-4">
                             <div class="flex items-center space-x-3 p-4 bg-red-50 rounded-lg">
                                 <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
@@ -139,7 +135,7 @@
                             </div>
                         </div>
 
-                        <button class="w-full btn-primary mt-6">
+                        <button class="w-full btn-primary mt-6" data-action="get-help-now">
                             Получить помощь сейчас
                         </button>
                     </div>
@@ -148,11 +144,260 @@
         </div>
     </section>
 
-    <!-- Блок для nec -->
-    <div class="info-section hidden" id="subserviceModalNec">
-        <h4>Необходимо произвести корректировку, если произошло:</h4>
-        <p class="info-text"></p>
-    </div>
+    <!-- Услуги -->
+    <section id="services" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Наши услуги</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Предоставляем полный спектр наркологических услуг с использованием современных методов лечения
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <div class="icon-droplets text-2xl text-blue-600"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Вывод из запоя</h3>
+                    <p class="text-gray-600 mb-4">Быстрое и безопасное прерывание запоя на дому или в стационаре</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Выезд врача 24/7</span></li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Капельницы на дому</span></li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Медикаментозная поддержка</span></li>
+                    </ul>
+                    <button class="w-full btn-secondary" data-action="service-details">Подробнее</button>
+                </div>
+
+                <div class="card hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <div class="icon-shield-plus text-2xl text-blue-600"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Кодирование</h3>
+                    <p class="text-gray-600 mb-4">Эффективные методы кодирования от алкогольной и наркотической зависимости</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Метод Довженко</span></li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Медикаментозное кодирование</span></li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Психотерапевтическое воздействие</span></li>
+                    </ul>
+                    <button class="w-full btn-secondary" data-action="service-details">Подробнее</button>
+                </div>
+
+                <div class="card hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <div class="icon-heart-pulse text-2xl text-blue-600"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Детоксикация</h3>
+                    <p class="text-gray-600 mb-4">Очищение организма от токсинов и продуктов распада наркотических веществ</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>УБОД процедуры</span></li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Плазмаферез</span></li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600"><div class="icon-check text-sm text-green-600"></div><span>Инфузионная терапия</span></li>
+                    </ul>
+                    <button class="w-full btn-secondary" data-action="service-details">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О клинике -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">О нашей клинике</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Наркологическая клиника "Новая Жизнь" — современный центр лечения алкогольной и наркотической зависимости.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Используем проверенные методики и современное оборудование. Анонимно, безопасно, эффективно.
+                    </p>
+                    <div class="flex items-center space-x-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">1000+</div>
+                            <p class="text-sm text-gray-600">Вылеченных пациентов</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">95%</div>
+                            <p class="text-sm text-gray-600">Успешных случаев</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">24/7</div>
+                            <p class="text-sm text-gray-600">Поддержка</p>
+                        </div>
+                    </div>
+                    <button class="btn-primary" data-action="book-consultation">Записаться на консультацию</button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <div class="icon-shield-check text-lg text-blue-600"></div>
+                        </div>
+                        <h3 class="font-bold text-gray-800 mb-2">Анонимность</h3>
+                        <p class="text-sm text-gray-600">Полная конфиденциальность лечения</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <div class="icon-clock text-lg text-blue-600"></div>
+                        </div>
+                        <h3 class="font-bold text-gray-800 mb-2">Круглосуточно</h3>
+                        <p class="text-sm text-gray-600">Работаем 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Врачи -->
+    <section id="doctors" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Наши врачи</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Команда опытных специалистов</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card text-center hover:shadow-xl transition-all duration-300">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&h=300&fit=crop&crop=face" alt="Петров Алексей Михайлович" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-blue-100">
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">20 лет опыта</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Петров Алексей Михайлович</h3>
+                    <p class="text-blue-600 font-medium mb-3">Главный врач, нарколог-психиатр</p>
+                    <p class="text-gray-600 mb-6">Лечение алкоголизма, кодирование</p>
+                    <button class="btn-secondary w-full" data-action="book-appointment">Записаться на прием</button>
+                </div>
+
+                <div class="card text-center hover:shadow-xl transition-all duration-300">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1594824020256-430eacee4746?w=300&h=300&fit=crop&crop=face" alt="Иванова Елена Сергеевна" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-blue-100">
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">15 лет опыта</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Иванова Елена Сергеевна</h3>
+                    <p class="text-blue-600 font-medium mb-3">Врач-нарколог, психотерапевт</p>
+                    <p class="text-gray-600 mb-6">Лечение наркомании, реабилитация</p>
+                    <button class="btn-secondary w-full" data-action="book-appointment">Записаться на прием</button>
+                </div>
+
+                <div class="card text-center hover:shadow-xl transition-all duration-300">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&h=300&fit=crop&crop=face" alt="Смирнов Дмитрий Александрович" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-blue-100">
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">12 лет опыта</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Смирнов Дмитрий Александрович</h3>
+                    <p class="text-blue-600 font-medium mb-3">Врач-психиатр, аддиктолог</p>
+                    <p class="text-gray-600 mb-6">Психотерапия зависимостей</p>
+                    <button class="btn-secondary w-full" data-action="book-appointment">Записаться на прием</button>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-blue-50 rounded-2xl p-8 text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Нужна консультация специалиста?</h3>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Наши врачи готовы оказать вам профессиональную помощь. Запишитесь на консультацию прямо сейчас.</p>
+                <button class="btn-primary" data-action="book-consultation">Записаться на консультацию</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Контакты</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Свяжитесь с нами удобным способом. Работаем круглосуточно.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Свяжитесь с нами</h3>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center"><div class="icon-phone text-lg text-white"></div></div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Телефон</p>
+                                <a href="tel:+74951234567" class="text-blue-600 font-medium hover:text-blue-700">+7 (495) 123-45-67</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center"><div class="icon-map-pin text-lg text-white"></div></div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Адрес</p>
+                                <p class="text-gray-600">г. Москва, ул. Медицинская, д. 15</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center"><div class="icon-clock text-lg text-white"></div></div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Режим работы</p>
+                                <p class="text-gray-600">Круглосуточно, без выходных</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="icon-alert-circle text-lg text-red-600"></div>
+                            <div>
+                                <p class="font-semibold text-red-700">Экстренная помощь</p>
+                                <p class="text-sm text-red-600">При острых состояниях звоните немедленно</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Обратная связь</h3>
+                    <form onsubmit="submitForm(event)" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-800 mb-2">Ваше имя</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Введите ваше имя">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-800 mb-2">Телефон</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="+7 (999) 123-45-67">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-800 mb-2">Сообщение</label>
+                            <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Опишите вашу ситуацию"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"><div class="icon-heart-pulse text-xl text-white"></div></div>
+                        <div>
+                            <h3 class="text-xl font-bold">Новая Жизнь</h3>
+                            <p class="text-sm text-gray-400">Наркологическая клиника</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Профессиональное лечение зависимостей с гарантией анонимности и качества.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Вывод из запоя</li>
+                        <li>Кодирование</li>
+                        <li>Детоксикация</li>
+                        <li>Реабилитация</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-3 text-gray-400">
+                        <div class="flex items-center space-x-2"><div class="icon-phone text-sm"></div><a href="tel:+74951234567" class="hover:text-white">+7 (495) 123-45-67</a></div>
+                        <div class="flex items-center space-x-2"><div class="icon-map-pin text-sm"></div><span>г. Москва, ул. Медицинская, д. 15</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-400 text-sm text-center">© 2024 Наркологическая клиника "Новая Жизнь". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

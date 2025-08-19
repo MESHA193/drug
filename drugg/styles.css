@@ -49,6 +49,27 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #eff6ff;
 }
 
+/* Состояние загрузки кнопки */
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.85;
+}
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    border: 2px solid rgba(255,255,255,0.8);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
 /* Карточки */
 .card {
     background-color: white;
@@ -98,4 +119,46 @@ a {
 
 .hover\:shadow-xl:hover {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Ripple эффект для кнопок */
+.has-ripple {
+    position: relative;
+    overflow: hidden;
+}
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    background: rgba(255,255,255,0.6);
+    animation: ripple 600ms linear;
+}
+@keyframes ripple {
+    to { transform: scale(4); opacity: 0; }
+}
+
+/* Тоаст уведомления */
+#toast-container {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 60;
+}
+.toast {
+    background: #1f2937;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+/* Подсветка формы */
+.highlight-pulse {
+    animation: pulse 1s ease-in-out 2;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,99,235,0.4); }
+    100% { box-shadow: 0 0 0 16px rgba(37,99,235,0); }
 }
