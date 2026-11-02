@@ -1,0 +1,18 @@
+{
+  "tableau": {
+    "logo": "./images/logo.png",
+    "title": "Центр выхода из зависимости",
+    "description": "Доврачебная помощь при наркотической и алкогольной зависимости. 24/7 консультации и поддержка.",
+    "url": "https://startclinic.pro",
+    "contacts": [
+      {
+        "type": "phone",
+        "value": "+7 (993) 312-79-20"
+      }
+    ],
+    "social": [],
+    "address": {
+      "country": "Россия"
+    }
+  }
+}
